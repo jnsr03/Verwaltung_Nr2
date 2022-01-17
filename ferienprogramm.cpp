@@ -125,7 +125,9 @@ void Ferienprogramm::angebotLoeschen()
         {
             if(angebotsListe.at(i)->getId() == requestedID)
                 current = angebotsListe.at(i);
-            i++;
+
+            if(current->getId() == -1)
+                i++;
         }
 
         if(current->getId() == requestedID)

@@ -17,6 +17,8 @@ private:
     void angebotBuchen();
     void angebotStornieren();
     void buchungenAnzeigen();
+    Angebot* findeAngebot(int id);
+    Kind* findeKind(int id);
 
     vector<Angebot*> angebotsListe;
     vector<Kind*> kinderListe;
